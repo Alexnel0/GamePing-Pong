@@ -30,6 +30,8 @@ class Player(GameSprite):
             self.rect.y += self.speed
 
 class Player2(GameSprite):
+    def updateFoRball(self):
+        
 
 
 PlayerOne = Player('player.png', 30, 90, 20, 1, 250)
@@ -45,7 +47,7 @@ while game:
     PlayerOne.reset()
     PlayerTwo.update2()
     PlayerTwo.reset()
-    #Ball.
+    Ball.reset()
     for e in event.get():
         if e.type == QUIT:
             game = False           
